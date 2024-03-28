@@ -326,7 +326,7 @@ main {
 
 .main-benefits-list-item {
   position: relative;
-  width: 280px;
+  width: 100%px;
   min-width: 280px;
   height: 152px;
   background-color: var(--warm-black-1);
@@ -424,13 +424,13 @@ main {
 
 .main-plans-list-container {
   position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 320px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 400px;
+  min-height: 320px;
+  margin: 0 auto;
   overflow-x: scroll;
+  scroll-snap-type: x proximity;
   overscroll-behavior-x: contain;
 }
 
@@ -441,16 +441,14 @@ main {
   justify-content: space-evenly;
   padding-top: 2rem;
   align-items: center;
-  width: 329px;
-  min-width: 220px;
-  margin-left: 2rem;
-  min-height: 250px;
+  min-width: 240px;
+  max-width: 329px;
   height: 320px;
+  min-height: 250px;
   background-color: var(--just-white);
   border-radius: 8px;
   box-shadow: 0 4px 8px 0px #59491e29;
-  margin: 4rem 1rem 0 1rem ;
-  scroll-snap-align: center;
+  margin: 4rem 2rem 0 2rem ;
 }
 
 .main-plans-list-container .list-item-headline {
