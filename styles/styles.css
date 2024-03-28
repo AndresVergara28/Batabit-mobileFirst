@@ -430,25 +430,26 @@ main {
   min-height: 320px;
   margin: 0 auto;
   overflow-x: scroll;
-  scroll-snap-type: x proximity;
   overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 
 .main-plans-list-item {
   position: relative;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: center;
   justify-content: space-evenly;
   padding-top: 2rem;
   align-items: center;
-  min-width: 240px;
+  min-width: 220px;
   max-width: 329px;
   height: 320px;
   min-height: 250px;
   background-color: var(--just-white);
   border-radius: 8px;
   box-shadow: 0 4px 8px 0px #59491e29;
-  margin: 4rem 2rem 0 2rem ;
+  margin: 4rem 1rem 0 1rem;
 }
 
 .main-plans-list-container .list-item-headline {
@@ -488,7 +489,7 @@ main {
   text-transform: capitalize;
 }
 
-.main-plans-list-item .list-item--price span{
+.main-plans-list-item .list-item--price span {
   position: relative;
   top: -18px;
   font-size: 1.4rem;
@@ -503,8 +504,7 @@ main {
   text-align: center;
 }
 
-
-.main-plans-list-item .list-item--ancla{
+.main-plans-list-item .list-item--ancla {
   width: 80%;
   display: flex;
   align-items: center;
@@ -515,7 +515,7 @@ main {
   border-radius: 0.4rem;
 }
 
-.main-plans-list-item .list-item--ancla a{
+.main-plans-list-item .list-item--ancla a {
   width: 100%;
   font-size: 1.4rem;
   line-height: 1.823rem;
@@ -523,16 +523,16 @@ main {
   font-weight: bold;
   color: var(--warm-black);
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: center;
   text-decoration: none;
   gap: 1rem;
 }
 
-.main-plans-list-item .list-item--ancla a  span{
+.main-plans-list-item .list-item--ancla a span {
   display: inline-block;
   width: 24px;
   height: 24px;
   min-height: 18px;
-  background-image: url('../assets/icons/arrow-right.svg');
+  background-image: url("../assets/icons/arrow-right.svg");
 }
