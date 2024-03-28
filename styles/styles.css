@@ -536,3 +536,54 @@ main {
   min-height: 18px;
   background-image: url("../assets/icons/arrow-right.svg");
 }
+
+
+/* FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--bitcoin-orange);
+  padding: 4rem 2rem;
+}
+
+footer .footer-list-container{
+  width: 50%;
+}
+footer .footer-list-container ul li a{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none ;
+  color: var(--just-white);
+}
+footer .footer-list-container ul li {
+  width: 100%;
+  padding: 0.6rem 0;
+  list-style-type: none;
+}
+footer .footer-list-container ul {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+
+
+
+footer .footer-logo-container{
+  width: 60px;
+  height: 50px;
+  background-image: url('../assets/imgs/footerLogo.png');
+  background-position: center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
